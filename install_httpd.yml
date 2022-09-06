@@ -2,8 +2,5 @@
 - name: setup webserver
   hosts: all
   become: true
-  tasks:
-    - name: httpd installed
-      ansible.builtin.yum:
-        name: httpd
-        state: latest
+  roles:
+    - httpd
