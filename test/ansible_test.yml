@@ -1,11 +1,6 @@
 ---
 - name: install some package
   hosts: all
-  yum:
-    name: httpd
-    state: latest
-
 
   roles:
     - install_httpd
-    - 
