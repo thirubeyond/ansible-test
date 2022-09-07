@@ -1,6 +1,6 @@
 ---
 - name: setup webserver
-  hosts: all
+  hosts: johnl7
   become: true
   roles:
     - httpd
