@@ -1,6 +1,6 @@
 ---
 - name: setup webserver
-  hosts: johnl7
-  become: true
+  hosts: all
+  remote_user: root
   roles:
     - httpd
