@@ -1,6 +1,6 @@
 ---
 - name: setup nginx
-  hosts: all
+  hosts: localhost
   become: true
   tasks:
     - name: nginx installed
