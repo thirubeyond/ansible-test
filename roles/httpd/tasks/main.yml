@@ -1,6 +1,5 @@
 ---    
   - name: httpd installed
     ansible.builtin.yum:
-      become: true
       name: httpd
       state: latest
