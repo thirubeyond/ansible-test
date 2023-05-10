@@ -1,4 +1,5 @@
 - name: setup webserver
   hosts: all
+  gather_facts: false
   roles:
     - httpd
