@@ -1,5 +1,4 @@
 - name: setup webserver
   hosts: all
-  remote_user: johnl
   roles:
     - httpd
