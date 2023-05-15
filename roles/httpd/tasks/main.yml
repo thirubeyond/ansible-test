@@ -1,5 +1,6 @@
 ---    
   - name: httpd installed
-    ansible.builtin.yum:
+    ansible.builtin.service:
       name: httpd
+      enabled: yes
       state: latest
