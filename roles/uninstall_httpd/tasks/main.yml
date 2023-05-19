@@ -1,0 +1,5 @@
+---    
+  - name: httpd installed
+    yum:
+      name: httpd
+      state: absent
