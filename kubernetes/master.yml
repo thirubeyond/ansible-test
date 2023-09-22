@@ -7,3 +7,8 @@
     - name: master debug
       ansible.builtin.debug:
         msg: "'{{ lookup('ansible.builtin.env', 'UBUNTU_IP') }}' is the UBUNTU_IP environment variable."
+
+    - name: master debug 2
+      ansible.builtin.debug:
+        msg: "'{{ ansible_env.UBUNTU_IP }}' is the second UBUNTU_IP environment variable."
+
