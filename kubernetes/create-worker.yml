@@ -1,0 +1,4 @@
+
+    - name: create_worker debug
+      ansible.builtin.debug:
+        msg: "'{{ lookup('ansible.builtin.env', 'UBUNTU_IP') }}' is the UBUNTU_IP environment variable."

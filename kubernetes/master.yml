@@ -1,0 +1,9 @@
+---
+- name: Prepare a Kubernetes cluster node
+  hosts: all
+  become: yes
+  tasks:
+
+    - name: master debug
+      ansible.builtin.debug:
+        msg: "'{{ lookup('ansible.builtin.env', 'UBUNTU_IP') }}' is the UBUNTU_IP environment variable."
