@@ -1,0 +1,15 @@
+---    
+  - name: development environment installed
+    yum:
+      name: build-essential
+      state: latest
+
+  - name: Create /etc/motd file
+    copy:
+      dest: "/etc/motd"
+      content: |
+       	######################################"
+        # Instance Type: <%=instance.instanceTypeName%>    #
+        # OS:            <%=server.osType%>    #
+        # This came from Ansible playbook!     #
+        ######################################
