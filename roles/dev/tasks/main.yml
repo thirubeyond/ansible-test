@@ -8,7 +8,7 @@
     copy:
       dest: "/etc/motd"
       content: |
-       	######################################"
+       	######################################
         # Instance Type: <%=instance.instanceTypeName%>    #
         # OS:            <%=server.osType%>    #
         # This came from Ansible playbook!     #
