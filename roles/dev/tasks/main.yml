@@ -1,6 +1,6 @@
 ---    
   - name: development environment installed
-    yum:
+    apt:
       name: build-essential
       state: latest
 
