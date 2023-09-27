@@ -1,0 +1,5 @@
+- name: setup development environment
+  hosts: all
+  gather_facts: false
+  roles:
+    - dev
