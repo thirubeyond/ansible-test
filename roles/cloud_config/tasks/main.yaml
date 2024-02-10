@@ -1,0 +1,7 @@
+---    
+  - name: Add a user
+    ansible.builtin.user:
+      name: johnd
+      comment: John Doe
+      groups: wheel, users
+      shell: /bin/bash
