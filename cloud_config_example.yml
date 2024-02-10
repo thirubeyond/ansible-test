@@ -1,0 +1,5 @@
+- name: setup VM as per cloud-config sample
+  hosts: all
+  gather_facts: false
+  roles:
+    - cloud_config
