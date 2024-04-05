@@ -10,6 +10,8 @@
       content: |
         ######################################
         # Instance Type: <%=instance.instanceTypeName%>    #
+        # Instance Type: {{ morpheus['instance']['instanceTypeName'] }} #
         # OS:            <%=server.osType%>    #
+        # OS:            {{ morpheus['server']['osType'] }}              #
         # This came from Ansible playbook!     #
         ######################################
