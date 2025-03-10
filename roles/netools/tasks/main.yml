@@ -1,0 +1,17 @@
+# Run when  OS is Ubuntu
+- name: Upgrade all existed apt packages
+  apt: upgrade=dist force_apt_get=yes
+
+- name: Enable sudo for installation
+  apt: name=sudo state=present
+  tags:
+    - common
+    - packages
+    - sudo
+
+- name: Install net tools packages
+  apt: name="{{ item }}" state=present
+  ignore_errors: yes
+  loop:
+    - net_tools
+    - git
