@@ -1,0 +1,5 @@
+- name: setup nettools
+  hosts: all
+  gather_facts: false
+  roles:
+    - nettools
