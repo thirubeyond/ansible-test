@@ -13,5 +13,5 @@
   apt: name="{{ item }}" state=present
   ignore_errors: yes
   loop:
-    - net_tools
+    - net-tools
     - git
